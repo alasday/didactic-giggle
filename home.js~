@@ -1,5 +1,9 @@
 var pic = document.getElementById("vimage");
-var btn = document.getElementById("clear");
+var cBtn = document.getElementById("clear");
+var mBtn = document.getElementById("move");
+var cx = 0;
+var cy = 0;
+
 
 var circleclick = function(e){
     var c = document.createElementNS("http://www.w3.org/2000/svg", "circle");
@@ -15,5 +19,10 @@ var clr = function(e){
     pic.innerHTML = "";
 }
 
+var mv = function(e){
+
+}
+
 pic.addEventListener("click", circleClick);
-btn.addEventListener("click", clr);
+cBtn.addEventListener("click", clr);
+mBtn.addEventListener("click", mv);
